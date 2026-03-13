@@ -1,0 +1,129 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to left, #C6A988, hsl(38, 75%, 77%));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}    
+
+.card h2 {
+    color: #6b3e26;
+    margin: 10px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.card p{
+    margin: 10px 0 15px 0;
+    font-size: 14px;
+    color: #4b2c1d;
+    line-height: 1.4;
+}
+
+.card h3 {
+    color: #6b3e26;
+    margin: 10px 0 15px 0;
+    font-size: 18px;
+}
+
+button {
+    background: #6b3e26;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background:#4b2c1d;
+    transform: translateY(-2px);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.tag {
+    background: #ff8c00; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.rating{
+    color: #f4c150; /* gold color for stars */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 500px){
+    body{
+        padding: 20px; /* add spacing on small screens */
+    }
+
+    .card{
+        width: 90%;       /* almost full screen width */
+        padding: 15px;    /* smaller padding */
+    }
+
+    .card h2{
+        font-size: 20px;  /* slightly smaller title */
+    }
+
+    .card p{
+        font-size: 13px;  /* smaller description */
+    }
+
+    .card h3{
+        font-size: 16px;  /* smaller price */
+    }
+
+    button{
+        padding: 10px 20px; /* fit small screen */
+        font-size: 13px;
+    }
+
+    .tag{
+        font-size: 11px;   /* tag smaller */
+        padding: 4px 8px;
+    }
+
+    .rating{
+        font-size: 12px;   /* smaller stars */
+    }
+}
